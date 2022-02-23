@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.invisible {
+    visibility: hidden;
+    display: inline;
+}

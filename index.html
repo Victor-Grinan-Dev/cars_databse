@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<header>
+    <div>
+        <h2>Search car by licence number</h2>
+        <div>
+            <label for="search">licence number</label>
+            <input type="text" id="searchInput" placeholder="enter a licence plate">
+        </div>
+
+        <input type="button" value="search" id="searchBtn">
+        <p class="invisible" id="searchResult"></p>
+    </div>
+    
+
+</header>
+<body>
+    <div>
+        <form id="inputData">
+            <h2>insert car data</h2>
+    
+            
+                <div>
+                    <label for="licence">licence </label>
+                    <input type="text" name="licence" class="licence"  id="licence" value="23">
+                </div>
+        
+                <div>
+                    <label for="maker">maker</label>
+                    <input type="text" name="maker" class="maker"  id="maker" value="23">
+                </div>
+        
+                <div>
+                    <label for="model">model</label>
+                    <input type="text" name="model" class="model" id="model" value="23">
+                </div>
+        
+                <div>
+                    <label for="owner">owner </label>
+                    <input type="text" name="owner" class="owner" id="owner" value="23">
+                </div>
+        
+                <div>
+                    <label for="price">price</label>
+                    <input type="text" name="price" class="price" id="price" value="23">
+                </div>
+        
+                <div>
+                    <label for="color">color</label>
+                    <input type="text" name="color" class="color" id="color" value="23">
+                </div>
+                <button class="addCar" value="Add Car" id="add"> Add Car </button>
+                <!-- <input type="submit" value="Add Car" class="addCar"> -->
+                
+                <button id="reset"> reset </button>
+        </form>
+    </div>
+    
+    
+    <div>
+        <table class="database" id="database">
+            <thead><h2>car database</h2></thead>
+
+        </table>
+    </div>
+   <script src="main.js"></script>
+</body>
+</html>
