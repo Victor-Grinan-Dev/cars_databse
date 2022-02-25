@@ -18,11 +18,13 @@ function scrollFunction() {
     }
   }
 
-upButton.addEventListener("click", pageTop);
-
-const pageTop = () => {
+  const pageTop = () => {
 
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+upButton.addEventListener("click", pageTop);
+
 

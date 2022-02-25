@@ -56,7 +56,7 @@ let price = document.querySelector("#price").value;
 let color = document.querySelector("#color").value;
 
 const addBtn = document.querySelector("#add");
-const genBtn = document.querySelector("#gen");
+const fillBtn = document.querySelector("#fill");
 const resetBtn = document.querySelector("#reset");
 
 const databaseTable = document.querySelector("#database");
@@ -99,7 +99,6 @@ const createDummyData = () => {
     const color = colors[randomIndex(colors)]
     const newCar = new Car(licence, maker, model, owner, price, color);
     populateDatabase(newCar);
-    displayDatabaseHTML()
 }
 
 const populateDatabase = (object) => {
@@ -170,7 +169,7 @@ const searchInDatabase = () => {
 }
 
 //evente listeners
-genBtn.addEventListener("click", createDummyData);
+fillBtn.addEventListener("click", fillDummyData);
 addBtn.addEventListener("click", enterValues);
 resetBtn.addEventListener("click", reset);
 searchBtn.addEventListener("click", searchInDatabase);
