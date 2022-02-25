@@ -212,6 +212,10 @@ footer {
     align-items: center;
 }
 
+input {
+    color: black;
+}
+
 #conctactSection p {
     padding: 50px;
 }
