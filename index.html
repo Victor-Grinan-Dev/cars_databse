@@ -6,12 +6,13 @@
     <meta name="viewport" 
     content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="common_style.css">
-    <link rel="stylesheet" href="style.css">  
-    <title> Car Database </title>
+    <link rel="stylesheet" href="style.css">
+    <title> Cars Database </title>
 </head>
 <body>
 
     <header>
+
         <section id="menuBar">
             <div id="logo">
                 <a href="#"><h1>VG</h1></a>
@@ -25,114 +26,114 @@
             </div> 
             <nav class="responsive">
 
-                <!--<button class="menu" id="mobButton">Menu</button>-->
+                <button id="mobileButton">
+                    
+                    <!--<span class="material-icons"> menu </span>-->
+                </button>
                 
                 <ul>
                     <li><a href="https://victor-python.github.io/Portfolio_web_page/">Home</a></li>
-                    <li><a href="https://victor-python.github.io/newsletter_form/"> 《 </a></li>
-                    <li><a href="#starter">Project</a></li>
-                    <li><a href="https://victor-python.github.io/toDoList/"> 》</a></li>
+                    <li><a href="https://victor-python.github.io/newsletter_form/"> 《 Back </a></li>
+                    <li><a href="#starter">Goto Project</a></li>
+                    <li><a href="https://victor-python.github.io/toDoList/"> Next 》</a></li>
                     <li><a href="https://www.bc.fi/?sgclid=CjwKCAiAgbiQBhAHEiwAuQ6Bkr5THOt4DfqX4mz_e1O6WBURiBQcHFbgeelyfIXyITuybfpFCgFI6RoCjrEQAvD_BwE" target="blank">HBC</a></li>
-                    <li><a href="#conctactSection">Conctact</a></li>
+                    <li><a href="#conctactSection" id="conctactNavBtn"> Conctact </a></li>
                 </ul>
             </nav>
         </section>
         <section id="heroBanner">
   
             <div id="intro">
-                <h4> School Project:</h4>
+                <h4> Class project -004: </h4>
             </div>
 
             <div id="welcome" class="invisible pageTitle">
                 
-                <h1> "Car Database" </h1>
+                <h1> "Cars Database" </h1>
+                <p>search from the database the owner of a car by entering the license plate, populate the database.</p>
             </div>
         </section>
         
     </header>
+    <div class="imgBox">
+        <img src="common_images/bigred.JPG" alt="pic" class="pic" class="sectionPic">
+    </div>
 
+    <main id="starter">
 
-    <main>
-        <div class="imgBox" id="starter">
-            <img src="/common_img/topHexes.jpg" alt="pic" class="pic" class="sectionPic">
-        </div>
         
         <section id="content">
             
-            <article>
-                <h2>Cars database</h2>
-                <p> Welcome to the used cars database service, you can find the owner of the car by inserting the license plate</p>
-                <section id="serachSection">
-                    <h3>search car by licence number</h3>
-                    <div>
-                        <label for="search">licence number</label>
-                        <input type="text" id="searchInput" value="EATDUST">
-                    </div>
-                    <button id="searchBtn"> Search </button>
-    
-                    <p class="invisible" id="searchResult">Search result</p>
-                </section>
-    
-                <section id="formSection">
-                    <form id="inputData">
-                        <h3>Insert new car data</h3>
+            <section id="serachSection">
+                <h2>search car by licence number</h2>
+                <div>
+                    <label for="search">licence number</label>
+                    <input type="text" id="searchInput" value="EATDUST">
+                </div>
                 
-                        
-                        <div>
-                            <label for="licence">licence </label>
-                            <input type="text" name="licence" class="licence"  id="licence" value="EATDUST">
-                        </div>
-                    
-                        <div>
-                            <label for="maker">maker</label>
-                            <input type="text" name="maker" class="maker"  id="maker" value="Lada">
-                        </div>
-                    
-                        <div>
-                            <label for="model">model</label>
-                            <input type="text" name="model" class="model" id="model" value="2600">
-                        </div>
-                    
-                        <div>
-                            <label for="owner">owner </label>
-                            <input type="text" name="owner" class="owner" id="owner" value="Victor G">
-                        </div>
-                    
-                        <div>
-                            <label for="price">price</label>
-                            <input type="text" name="price" class="price" id="price" value="50">
-                        </div>
-                    
-                        <div>
-                            <label for="color">color</label>
-                             <input type="text" name="color" class="color" id="color" value="neon green">
-                        </div>
-                        <button class="addCar" value="Add Car" id="add"> Add Car </button>
-                            <!-- <input type="submit" value="Add Car" class="addCar"> -->
-                            
-                        <button id="reset"> reset </button>
-                        
-                    </form>
-                </section>
-                
-                <section id="databaseSection">
-    
-                    <button id="gen"> Gen data </button>
-    
-                    <table class="database" id="database">
-                        <thead><h3>car database</h3></thead>
+                <button id="searchBtn">Search</button>
+
+                <p class="invisible" id="searchResult">Search result</p>
+            </section>
+
+            <section id="formSection">
+                <form id="inputData">
+                    <h2>Insert car data</h2>
             
-                    </table>
-                </section>
-    
-            </article>
+                    
+                    <div>
+                        <label for="licence">licence </label>
+                        <input type="text" name="licence" class="licence"  id="licence" value="EATDUST">
+                    </div>
+                
+                    <div>
+                        <label for="maker">maker</label>
+                        <input type="text" name="maker" class="maker"  id="maker" value="Lada">
+                    </div>
+                
+                    <div>
+                        <label for="model">model</label>
+                        <input type="text" name="model" class="model" id="model" value="2600">
+                    </div>
+                
+                    <div>
+                        <label for="owner">owner </label>
+                        <input type="text" name="owner" class="owner" id="owner" value="Victor G">
+                    </div>
+                
+                    <div>
+                        <label for="price">price</label>
+                        <input type="text" name="price" class="price" id="price" value="50">
+                    </div>
+                
+                    <div>
+                        <label for="color">color</label>
+                         <input type="text" name="color" class="color" id="color" value="neon green">
+                    </div>
+                    <button class="addCar" value="Add Car" id="add"> Add Car </button>
+                        <!-- <input type="submit" value="Add Car" class="addCar"> -->
+                        
+                    <button id="reset"> reset </button>
+                    
+                </form>
+            </section>
+            
+            <section id="databaseSection">
+
+                <button id="fill"> fill dummy data </button>
+
+                <table class="database" id="database">
+                    <thead><h2>car database</h2></thead>
+        
+                </table>
+            </section>
 
         </section>
 
     </main>
 
     <div class="imgBox">
-        <img src="/common_img/huge_hexes.jpg" alt="pic" class="pic" class="sectionPic">
+        <img src="common_images/bigredreversed.jpg" alt="pic" class="pic" class="sectionPic">
     </div>
 
     <footer>
@@ -190,8 +191,21 @@
                 </div>
             </section>
 
+            <!--
+
+            <section id="profilePicsCollage">
+                <div id="red" class="portrait"></div>
+                <div id="blue" class="portrait"></div>
+                <div id="yellow" class="portrait"></div>
+                <div id="green" class="portrait"></div>
+                <div id="orange" class="portrait"></div>
+                <div id="purple" class="portrait"></div>
+            </section>
+
+            -->
+
             <section id="licenseSection">
-                <p id="legal">Copyrights &copy; 2022</p>
+                <p id="legal">Copyrights &copy 2022</p><!-- ;  -->
                 <p id="love">Made with ❤️ in Finland</p>
             </section>
 
